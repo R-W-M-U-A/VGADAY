@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мінігра "Вгадай число"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <h2>Гра "Вгадай число"</h2>
+        <p>Я загадав число від 1 до 100. Спробуй вгадати!</p>
+        
+        <input type="number" id="guessInput" min="1" max="100" placeholder="Ваш варіант...">
+        <button id="guessButton">Вгадати!</button>
+        
+        <p id="message"></p>
+        <p>Спроб зроблено: <span id="attemptsCount">0</span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

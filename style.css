@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: #f4f4f4;
+}
+
+.game-container {
+    background-color: #ffffff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 25px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+#guessInput {
+    width: 60%;
+    padding: 8px;
+    font-size: 16px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#guessButton {
+    padding: 9px 15px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#guessButton:hover {
+    background-color: #0056b3;
+}
+
+#message {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    min-height: 25px; /* Резервуємо місце, щоб контейнер не "стрибав" */
+}
+
+/* Стилі для повідомлень */
+.message-low { color: #ff8c00; } /* Помаранчевий для "Замало" */
+.message-high { color: #1e90ff; } /* Синій для "Забагато" */
+.message-win { color: #28a745; } /* Зелений для "Перемога" */
+.message-error { color: #dc3545; } /* Червоний для "Помилка" */
